@@ -121,7 +121,7 @@ a {
 }
 
 .hp3:hover {
-  text-shadow: -2px 2px 1px #0f0, 2px -2px 1px #00f, 1px 1px 0px #f00;
+  text-shadow: -1px 1px 1px #0f0, 2px -2px 1px #00f, 1px 2px 1px #f00;
 }
 
 li {
