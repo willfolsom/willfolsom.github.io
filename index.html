@@ -9,8 +9,8 @@
     <div class="card">
         <div class="card-content">
             <div class="name">
-                <div class="z105">w</div><div class="z95">i</div><div class="z90">l</div><div class="z100">l&nbsp;</div>
-                <div class="z100">f</div><div class="z95">o</div><div class="z110">l</div><div class="z105">s</div><div class="z95">o</div><div class="z100">m</div>
+                <div class="z105 hp">w</div><div class="z95 hp2">i</div><div class="z90 hp3">l</div><div class="z100 hp">l&nbsp;</div>
+                <div class="z100 hp2">f</div><div class="z95 hp">o</div><div class="z110 hp2">l</div><div class="z105 hp3">s</div><div class="z95 hp">o</div><div class="z100 hp2">m</div>
             </div>
             <p>creative developer</p>
             <ul>
@@ -24,7 +24,7 @@
 <script>
     let card = document.querySelector('.card');
 
-    let mobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+    let mobile = false; // temporary (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
 
     if (!mobile) {
         document.addEventListener('mousemove', function(e) {
