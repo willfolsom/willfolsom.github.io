@@ -50,7 +50,7 @@
 
             alpha = event.alpha - alphaOffset;
 
-            beta = event.beta - betaOffset;
+            beta = (event.beta - betaOffset) * -1;
             gamma = event.gamma - gammaOffset;
 
             card.style.transform = `rotateY(${gamma}deg) rotateX(${beta}deg) rotateZ(${alpha}deg)`;
