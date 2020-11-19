@@ -24,9 +24,23 @@
 <script>
     let card = document.querySelector('.card');
 
-    document.addEventListener('mousemove', function(e) {
-        let xAxis = ((window.innerWidth / 2 - e.pageX) / 40) * -1;
-        let yAxis = (window.innerHeight / 2 - e.pageY) / 40;
-        card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-    });
+    let mobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+
+    if (!mobile) {
+        document.addEventListener('mousemove', function(e) {
+            let xAxis = ((window.innerWidth / 2 - e.pageX) / 20) * -1;
+            let yAxis = (window.innerHeight / 2 - e.pageY) / 20;
+            card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+        });
+    } else {
+        function handleOrientation(event) {
+            let alpha = event.alpha;
+            let beta = event.beta;
+            beta -= 45;
+            beta *= -1;
+            card.style.transform = `rotateY(${alpha}deg) rotateX(${beta}deg)`;
+        }
+
+        window.addEventListener('deviceorientation', handleOrientation);
+    }
 </script>
