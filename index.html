@@ -29,21 +29,32 @@
 <script>
     let card = document.querySelector('.card');
 
-    let mobile = false; // temporary (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
-
-    if (!mobile) {
+    if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
         document.addEventListener('mousemove', function(e) {
             let xAxis = ((window.innerWidth / 2 - e.pageX) / 20) * -1;
             let yAxis = (window.innerHeight / 2 - e.pageY) / 20;
             card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
         });
     } else {
+        let init = false;
+        let alphaOffset = 0, betaOffset = 0, gammaOffset = 0;
+        let alpha = 0, beta = 0, gamma = 0;
+
         function handleOrientation(event) {
-            let alpha = event.alpha;
-            let beta = event.beta;
-            beta -= 45;
-            beta *= -1;
-            card.style.transform = `rotateY(${alpha}deg) rotateX(${beta}deg)`;
+            if (!init) {
+                alphaOffset = event.alpha;
+                betaOffset = event.beta;
+                gammaOffset = event.gamma;
+                init = true;
+            }
+
+            alpha = event.alpha - alphaOffset;
+            alpha = (alpha < 0)?(360 - Math.abs(alpha)):alpha;
+
+            beta = (event.beta - betaOffset) * -1;
+            gamma = (event.gamma - gammaOffset);
+
+            card.style.transform = `rotateY(${alpha}deg) rotateX(${beta}deg) rotateZ(${gamma}deg)`;
         }
 
         window.addEventListener('deviceorientation', handleOrientation);
