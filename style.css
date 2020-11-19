@@ -108,7 +108,7 @@ a {
   text-decoration: none;
 }
 
-.hp {
+.hp, .hp2, .hp3 {
   transition: transform 150ms linear, text-shadow 150ms linear;
 }
 
@@ -116,16 +116,8 @@ a {
   text-shadow: 2px -2px 1px #00f, 1px 1px 0px #f00, -2px 2px 2px #0f0;
 }
 
-.hp2 {
-  transition: transform 150ms linear, text-shadow 150ms linear;
-}
-
 .hp2:hover {
   text-shadow: 1px 1px 0px #f00, -2px 2px 2px #0f0, 2px -2px 1px #00f;
-}
-
-.hp3 {
-  transition: transform 150ms linear, text-shadow 150ms linear;
 }
 
 .hp3:hover {
@@ -133,7 +125,6 @@ a {
 }
 
 li {
-  color: white;
   text-decoration: none;
   margin: 0px 42px 0px 42px;
   transform: translateZ(68px);
