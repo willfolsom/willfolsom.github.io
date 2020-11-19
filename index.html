@@ -49,7 +49,7 @@
             }
 
             alpha = event.alpha - alphaOffset;
-
+            alpha = (alpha < 0)?(360 - Math.abs(alpha)):alpha;
             beta = (event.beta - betaOffset) * -1;
             gamma = event.gamma - gammaOffset;
 
