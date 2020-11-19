@@ -53,7 +53,7 @@
             beta = event.beta - betaOffset;
             gamma = event.gamma - gammaOffset;
 
-            card.style.transform = `rotateY(${alpha}deg) rotateX(${gamma}deg) rotateZ(${beta}deg)`;
+            card.style.transform = `rotateY(${gamma}deg) rotateX(${beta}deg) rotateZ(${alpha}deg)`;
         }
 
         window.addEventListener('deviceorientation', handleOrientation);
