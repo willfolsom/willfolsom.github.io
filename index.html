@@ -1,1 +1,32 @@
-Hello world.
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id=starsSmall></div>
+    <div id=starsMedium></div>
+    <div class="card">
+        <div class="card-content">
+            <div class="name">
+                <div class="z105">w</div><div class="z95">i</div><div class="z90">l</div><div class="z100">l&nbsp;</div>
+                <div class="z100">f</div><div class="z95">o</div><div class="z110">l</div><div class="z105">s</div><div class="z95">o</div><div class="z100">m</div>
+            </div>
+            <p>creative developer</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/willfolsom/" target="_blank">linkedin</a></li>
+                <li><a href="https://github.com/willfolsom/" target="_blank">github</a></li>
+                <li><a href="https://www.instagram.com/will.folsom/" target="_blank">insta</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    let card = document.querySelector('.card');
+
+    document.addEventListener('mousemove', function(e) {
+        let xAxis = ((window.innerWidth / 2 - e.pageX) / 40) * -1;
+        let yAxis = (window.innerHeight / 2 - e.pageY) / 40;
+        card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+    });
+</script>
