@@ -48,9 +48,11 @@
                 init = true;
             }
 
-            alpha = event.alpha/2 - alphaOffset;
-            beta = (event.beta/2 - betaOffset) * -1;
-            gamma = event.gamma/2 - gammaOffset;
+            alpha = event.alpha - alphaOffset;
+            alpha = (alpha < 0)?(360 - Math.abs(alpha)):alpha;
+
+            beta = (event.beta - betaOffset) * -1;
+            gamma = event.gamma - gammaOffset;
 
             card.style.transform = `rotateY(${alpha}deg) rotateX(${beta}deg) rotateZ(${gamma}deg)`;
         }
