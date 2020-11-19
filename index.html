@@ -49,12 +49,11 @@
             }
 
             alpha = event.alpha - alphaOffset;
-            alpha = (alpha < 0)?(360 - Math.abs(alpha)):alpha;
 
-            beta = (event.beta - betaOffset) * -1;
+            beta = event.beta - betaOffset;
             gamma = event.gamma - gammaOffset;
 
-            card.style.transform = `rotateY(${alpha}deg) rotateX(${beta}deg) rotateZ(${gamma}deg)`;
+            card.style.transform = `rotateY(${alpha}deg) rotateX(${gamma}deg) rotateZ(${beta}deg)`;
         }
 
         window.addEventListener('deviceorientation', handleOrientation);
