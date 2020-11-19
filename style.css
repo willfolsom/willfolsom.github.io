@@ -109,7 +109,7 @@ a {
 }
 
 .hp {
-  transition: transform 200ms ease-out, text-shadow 200ms ease-out;
+  transition: transform 150ms linear, text-shadow 150ms linear;
 }
 
 .hp:hover {
@@ -117,7 +117,7 @@ a {
 }
 
 .hp2 {
-  transition: transform 200ms ease-out, text-shadow 200ms ease-out;
+  transition: transform 150ms linear, text-shadow 150ms linear;
 }
 
 .hp2:hover {
@@ -125,7 +125,7 @@ a {
 }
 
 .hp3 {
-  transition: transform 200ms ease-out, text-shadow 200ms ease-out;
+  transition: transform 150ms linear, text-shadow 150ms linear;
 }
 
 .hp3:hover {
