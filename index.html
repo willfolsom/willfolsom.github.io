@@ -44,23 +44,20 @@
         });
     } else {
         let init = false;
-        let alphaOffset = 0, betaOffset = 0, gammaOffset = 0;
-        let alpha = 0, beta = 0, gamma = 0;
+        let betaOffset = 0, gammaOffset = 0;
+        let beta = 0, gamma = 0;
 
         function handleOrientation(event) {
             if (!init) {
-                alphaOffset = event.alpha;
                 betaOffset = event.beta;
                 gammaOffset = event.gamma;
                 init = true;
             }
 
-            alpha = event.alpha - alphaOffset;
-            alpha = (alpha < 0)?(360 - Math.abs(alpha)):alpha;
             beta = (event.beta - betaOffset) * -1;
             gamma = event.gamma - gammaOffset;
 
-            card.style.transform = `rotateY(${gamma}deg) rotateX(${beta}deg) rotateZ(${alpha}deg)`;
+            card.style.transform = `rotateY(${gamma}deg) rotateX(${beta}deg)`;
         }
 
         window.addEventListener('deviceorientation', handleOrientation);
