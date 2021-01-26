@@ -54,7 +54,7 @@
                 init = true;
             }
 
-            beta = ((event.beta - betaOffset) * .5) * -1;
+            beta = (event.beta - betaOffset) * -1;
             gamma = (event.gamma - gammaOffset) * .5;
 
             card.style.transform = `rotateY(${gamma}deg) rotateX(${beta}deg)`;
