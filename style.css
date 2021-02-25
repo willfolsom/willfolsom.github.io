@@ -108,24 +108,24 @@ ul {
 }
 
 a {
-  font-size: 18px;
+  font-size: 22px;
   color: white;
   text-decoration: none;
 }
 
-.hp, .hp2, .hp3 {
+.red, .blue, .green {
   transition: transform 150ms linear, text-shadow 150ms linear;
 }
 
-.hp:hover {
+.blue:hover {
   text-shadow: 2px -2px 1px #00f, 1px 1px 0px #f00, -2px 2px 2px #0f0;
 }
 
-.hp2:hover {
+.red:hover {
   text-shadow: 1px 1px 0px #f00, -2px 2px 2px #0f0, 2px -2px 1px #00f;
 }
 
-.hp3:hover {
+.green:hover {
   text-shadow: -1px 1px 1px #0f0, 2px -2px 1px #00f, 1px 2px 1px #f00;
 }
 
