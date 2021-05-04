@@ -131,7 +131,7 @@ a {
 
 li {
   text-decoration: none;
-  margin: 0px 42px;
+  margin: 0px 24px;
   transform: translateZ(68px);
   transition: transform 200ms ease-out, text-shadow 200ms ease-out;
 }
