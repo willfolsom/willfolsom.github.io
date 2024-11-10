@@ -1,24 +1,118 @@
+:root {
+  --gold: #ffc436;
+  --gray: #212121;
+  --white: #fff;
+}
+
 body {
-  color: #212121;
-  font-family: 'Parisienne', serif;
+  color: var(--gray);
+  font-family: 'Noto Sans', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  margin-top: 24px;
+  margin: 0px;
+
+  /* background-image: linear-gradient(to right bottom, #fff, #ffc436); */
 }
 
 h1 {
+  font-family: 'Parisienne', serif;
   font-size: 48px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 48px 0px;
+
+  @media only screen and (min-device-width: 480px) {
+    flex-direction: row;
+  }
+}
+
+.hero-2 {
+  padding: 48px 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (min-device-width: 480px) {
+    padding: 0px 48px;
+    align-items: start;
+  }
+}
+
+hr {
+  border-top: 1px solid var(--gold);
+  width: 100%;
 }
 
 .button {
-  border-radius: 64px;
-  padding: 8px 36px;
+  font-family: 'Parisienne', serif;
   font-size: 24px;
   font-weight: bold;
+  border-radius: 64px;
+  padding: 8px 36px;
   text-decoration: none;
-  color: #212121;
-  background-image: linear-gradient(to right bottom, #ffeecb, #ffe4a8, #ffd985, #ffcf60, #ffc436);
-  border: 1px solid #ffc436;
+  color: var(--gray);
+  background: var(--white);
+  border: 2px solid var(--gold);
+}
+
+.wrap {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right bottom, #fff, #ffc436);
+  padding: 48px 0px;
+}
+
+.card {
+  background: var(--white);
+  padding: 32px 48px;
+  border-radius: 16px;
+  max-width: 640px;
+}
+
+.wrap-2 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px 0px;
+}
+
+.photo-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-row-1-l {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 48px;
+  align-items: start;
 }
