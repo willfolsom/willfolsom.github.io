@@ -1,0 +1,19 @@
+body {
+  color: #212121;
+  font-family: 'Parisienne', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.button {
+  border-radius: 64px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #212121;
+  background-image: linear-gradient(to right bottom, #ffeecb, #ffe4a8, #ffd985, #ffcf60, #ffc436);
+}
