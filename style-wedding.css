@@ -4,16 +4,14 @@
   --white: #fff;
 }
 
+html,
 body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
   color: var(--gray);
   font-family: 'Noto Sans', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  margin: 0px;
-
-  /* background-image: linear-gradient(to right bottom, #fff, #ffc436); */
 }
 
 h1 {
@@ -40,10 +38,11 @@ p {
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin: 48px 0px;
+  margin: 0px;
 
   @media only screen and (min-device-width: 480px) {
     flex-direction: row;
+    margin: 48px 0px;
   }
 }
 
@@ -84,7 +83,11 @@ hr {
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(to right bottom, #fff, #ffc436);
-  padding: 48px 0px;
+  padding: 0px;
+
+  @media only screen and (min-device-width: 480px) {
+    padding: 48px 0px;
+  }
 }
 
 .card {
@@ -99,20 +102,60 @@ hr {
   width: 100%;
   flex-direction: column;
   justify-content: center;
-  padding: 48px 0px;
+  padding: 0px;
+
+  @media only screen and (min-device-width: 480px) {
+    padding: 48px 0px;
+  }
 }
 
 .photo-row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
+  width: 100%;
   justify-content: center;
   align-items: center;
+  margin: 0px;
+
+  @media only screen and (min-device-width: 480px) {
+    flex-direction: row;
+    padding: 48px 0px;
+  }
 }
 
+.photo-row-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+
+  @media only screen and (min-device-width: 480px) {
+    flex-direction: row;
+    padding: 48px 0px;
+  }
+}
+
+
 .photo-row-1-l {
+  padding: 48px 0px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0px 48px;
-  align-items: start;
+  align-items: center;
+
+  @media only screen and (min-device-width: 480px) {
+    padding: 0px 48px;
+    align-items: start;
+  }
+
+  h2 {
+    text-align: center;
+
+    @media only screen and (min-device-width: 480px) {
+      text-align: left;
+    }
+  }
 }
