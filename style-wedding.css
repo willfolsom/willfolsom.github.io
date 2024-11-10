@@ -91,16 +91,29 @@ hr {
 }
 
 .card {
-  background: var(--white);
+  background: none;
+  background-image: linear-gradient(to right bottom, #fff, #ffc436);
   padding: 32px 48px;
   border-radius: 16px;
   max-width: 640px;
+
+  @media only screen and (min-device-width: 480px) {
+    background: var(--white);
+    background-image: none;
+  }
+
+  h1 {
+    text-align: center;
+
+    @media only screen and (min-device-width: 480px) {
+      text-align: left;
+    }
+  }
 }
 
 .wrap-2 {
   display: flex;
   width: 100%;
-  flex-direction: column;
   justify-content: center;
   padding: 0px;
 
@@ -115,11 +128,9 @@ hr {
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin: 0px;
 
   @media only screen and (min-device-width: 480px) {
     flex-direction: row;
-    padding: 48px 0px;
   }
 }
 
@@ -129,14 +140,11 @@ hr {
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin: 0px;
 
   @media only screen and (min-device-width: 480px) {
     flex-direction: row;
-    padding: 48px 0px;
   }
 }
-
 
 .photo-row-1-l {
   padding: 48px 0px;

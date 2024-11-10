@@ -39,8 +39,9 @@
         grounds, starting at 12pm PST.
       </p>
       <p>
-        Photos to be taken throughout!
+        Photos will be taken throughout.
       </p>
+      <h2 id="demo"></h2>
     </div>
   </div>
 
@@ -49,10 +50,7 @@
       <div class="photo-row-1-l">
         <h1>Ceremony</h1>
         <h2>Santa Barbara County Courthouse, Mural Room</h2>
-        <p>
-          1100 Anacapa St, Santa Barbara, CA 93101<br />
-          12pm-2pm PST<br />
-        </p>
+        <p>1100 Anacapa St, Santa Barbara, CA 93101<br />12pm-2pm PST<br /></p>
         <div style="margin-top: 32px;">
           <a href="https://www.atlasobscura.com/places/the-mural-room" class="button">View</a>
         </div>
@@ -79,10 +77,7 @@
       <div class="photo-row-1-l">
         <h1>Dinner</h1>
         <h2>Loquita</h2>
-        <p>
-          202 State Street Santa Barbara, CA 93101<br />
-          5pm-8pm PST
-        </p>
+        <p>202 State Street Santa Barbara, CA 93101<br />5pm-8pm PST</p>
         <div style="margin-top: 32px;">
           <a href="https://www.loquitasb.com/" class="button">View</a>
         </div>
@@ -92,7 +87,20 @@
       </div>
     </div>
   </div>
-  </div>
+
+  <script>
+    (function () {
+      let m = new Date("May 16, 2025");
+      var d = m - new Date();
+      var days = Math.floor(d / (1000 * 60 * 60 * 24));
+
+      document.getElementById("demo").innerHTML = days + (" days to go!");
+
+      if (d < 0) {
+        document.getElementById("demo").innerHTML = "0 days to go!";
+      }
+    })();
+  </script>
 
   <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
 </body>
