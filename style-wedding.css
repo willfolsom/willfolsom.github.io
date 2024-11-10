@@ -3,17 +3,22 @@ body {
   font-family: 'Parisienne', serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   height: 100vh;
+  margin-top: 24px;
+}
+
+h1 {
+  font-size: 48px;
 }
 
 .button {
   border-radius: 64px;
-  padding: 12px 20px;
-  font-size: 16px;
+  padding: 8px 36px;
+  font-size: 24px;
   font-weight: bold;
   text-decoration: none;
   color: #212121;
   background-image: linear-gradient(to right bottom, #ffeecb, #ffe4a8, #ffd985, #ffcf60, #ffc436);
+  border: 1px solid #ffc436;
 }
