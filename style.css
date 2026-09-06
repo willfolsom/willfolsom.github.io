@@ -56,6 +56,9 @@ h1 em { font-weight:400; }
 .bio p { font-size:15px; line-height:1.7; color:#b7c0c1; max-width:550px; margin:0 0 13px; }
 .project-teaser { margin-top:22px; }
 .project-label { display:block; margin-bottom:6px; color:var(--accent); font-family:var(--font-geist-mono),monospace; font-size:10px; letter-spacing:.1em; text-transform:uppercase; }
+.project-identity { display:flex; align-items:center; gap:12px; }
+.project-mark { display:block; width:32px; height:32px; flex:none; }
+.project-copy { min-width:0; }
 .project-teaser h3 { margin:0 0 2px; font-size:15px; font-weight:500; }
 .project-teaser p { margin:0; font-size:13px; }
 .invitation { font-size:13px; color:#a6b1b1; }
