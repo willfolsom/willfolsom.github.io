@@ -54,6 +54,10 @@ h1 em { font-weight:400; }
 .bio { transform:translateZ(24px); }
 .bio h2 { font-family:var(--font-editorial),Georgia,serif; font-weight:400; font-size:39px; line-height:1.2; letter-spacing:-.02em; margin:0 0 18px; }
 .bio p { font-size:15px; line-height:1.7; color:#b7c0c1; max-width:550px; margin:0 0 13px; }
+.project-teaser { margin-top:22px; }
+.project-label { display:block; margin-bottom:6px; color:var(--accent); font-family:var(--font-geist-mono),monospace; font-size:10px; letter-spacing:.1em; text-transform:uppercase; }
+.project-teaser h3 { margin:0 0 2px; font-size:15px; font-weight:500; }
+.project-teaser p { margin:0; font-size:13px; }
 .invitation { font-size:13px; color:#a6b1b1; }
 @media(hover:hover) { .card-shell:hover .face::before,.card-shell:hover .face::after,.card-shell:hover .name-light { opacity:1; } }
 @media(min-width:1400px) { .face { min-height:415px; padding:33px 46px; } }
