@@ -1,55 +1,72 @@
+<!doctype html>
+<html lang="en" class="dark">
 <head>
-  <meta name="description"
-    content="Will Folsom, full stack engineer. Currently working at Capitalize. Move your mouse around the page or rotate your device to move the card.">
-  <meta name="keywords"
-    content="will folsom, will, folsom, lead, full stack, software engineer, software, developer, creative, css transform, 3D business card, javascript, stars">
-  <meta name="og:title" property="og:title" content="Will Folsom">
-  <meta name="og:description" property="og:description" content="Will Folsom, Full Stack Engineer">
-  <meta name="robots" content="index, follow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Will Folsom — Engineer &amp; Technical Leader</title>
+  <meta name="description" content="Engineer and technical leader. Software, markets, and an open mind.">
   <meta name="author" content="Will Folsom">
-  <meta name="viewport" content="width=device-width, initial-scale=.8">
-
-  <title>Will Folsom</title>
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://willfolsom.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Will Folsom — Engineer &amp; Technical Leader">
+  <meta property="og:description" content="Engineer and technical leader. Software, markets, and an open mind.">
+  <meta property="og:url" content="https://willfolsom.com/">
+  <meta name="theme-color" content="#080c10">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?&family=Work+Sans:wght@500&display=swap">
+  <script type="module" src="app.js"></script>
 </head>
-
 <body>
-  <h1>Will Folsom</h1>
-  <h2>Full Stack Engineer</h2>
-  <h3>Currently Working at Capitalize</h3>
-  <h3>Move your mouse around the page or rotate your device to move the card</h3>
-  <div id="starsSmall"></div>
-  <div id="starsMedium"></div>
-  <div class="card">
-    <div class="card-content">
-      <div class="name">
-        <div class="nh blue">w</div>
-        <div class="nh red">i</div>
-        <div class="nh green">l</div>
-        <div class="nh blue">l&nbsp;</div>
-        <div class="nh red">f</div>
-        <div class="nh blue">o</div>
-        <div class="nh red">l</div>
-        <div class="nh green">s</div>
-        <div class="nh blue">o</div>
-        <div class="nh red">m</div>
+  <main class="universe">
+    <div class="star-field" aria-hidden="true"><canvas data-depth="far"></canvas><canvas data-depth="near"></canvas></div>
+    <header class="masthead">
+      <button class="motion-toggle" type="button" aria-label="Pause star movement" aria-pressed="false" hidden>
+        <span data-icon="pause"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pause" aria-hidden="true"><rect x="14" y="3" width="5" height="18" rx="1"></rect><rect x="5" y="3" width="5" height="18" rx="1"></rect></svg></span><span data-icon="play" hidden><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg></span>
+      </button>
+    </header>
+    <section class="stage" aria-label="Will Folsom’s calling card">
+      <div class="card-shell">
+        <div class="tilt">
+          <div class="card">
+            <div class="face front" aria-hidden="false">
+              <div class="card-top">
+                <span class="monogram">wf<span>.</span></span>
+                <!-- Tabler Icons ball-tennis (MIT), adapted fill/stroke; see assets/licenses/tabler-icons.txt. -->
+                <svg class="tennis-mark" viewBox="0 0 24 24" role="img" aria-label="Tennis">
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" fill="currentColor" />
+                  <g fill="none" stroke="#172015" stroke-width="1.2" stroke-linecap="round">
+                    <path d="M6 5.3a9 9 0 0 1 0 13.4" /><path d="M18 5.3a9 9 0 0 0 0 13.4" />
+                  </g>
+                </svg>
+              </div>
+              <div class="identity">
+                <h1><span>Will <em>Folsom</em></span><span class="name-light" aria-hidden="true">Will <em>Folsom</em></span></h1>
+                <p>Engineer &amp; technical leader.</p>
+              </div>
+              <div class="card-bottom">
+                <nav aria-label="Profile links">
+                  <a href="https://www.linkedin.com/in/willfolsom/" target="_blank" rel="noopener noreferrer">LinkedIn <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+                  <a href="https://github.com/willfolsom/" target="_blank" rel="noopener noreferrer">GitHub <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+                </nav>
+                <button id="show-background" type="button" aria-expanded="false" aria-controls="background" hidden>A little more <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg></button>
+              </div>
+            </div>
+            <div class="face back" id="background" inert aria-hidden="true">
+              <div class="card-top"><button id="show-front" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg> Back</button><span class="edition">A little more</span></div>
+              <div class="bio">
+                <h2>A wider field of view.</h2>
+                <p>I tend to build financial products and the systems behind them. Engineering leadership at Capitalize; previously RoadSync and Kabbage.</p>
+                <p>Interested in markets, good films, and ideas that don’t fit neatly into a job description.</p>
+              </div>
+              <div class="card-bottom"><span class="invitation">Something worth pursuing?</span><a href="https://www.linkedin.com/in/willfolsom/" target="_blank" rel="noopener noreferrer">Let’s talk <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></div>
+            </div>
+          </div>
+        </div>
       </div>
-      <p>Full Stack Engineer</p>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/willfolsom/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/willfolsom/" target="_blank">GitHub</a></li>
-      </ul>
-    </div>
-  </div>
+    </section>
+  </main>
 </body>
-<script>
-  let card = document.querySelector('.card');
-
-  document.addEventListener('mousemove', function (e) {
-    let xAxis = ((window.innerWidth / 2 - e.pageX) / 20) * -1;
-    let yAxis = (window.innerHeight / 2 - e.pageY) / 20;
-    card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-  });
-</script>
+</html>
